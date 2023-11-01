@@ -1,0 +1,9 @@
+{%load humanize %}
+
+<html>
+    <ut>
+        {% for posting in job_posting %}
+            <li>{{ posting.title|title }} | {{ posting.description }} | ${{ posting.salery }}</li>
+        {% endfor %}
+    </ul>
+</html>
